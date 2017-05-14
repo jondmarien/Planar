@@ -1,4 +1,4 @@
-package nuke.planar.item;
+package nuke.planar.item.base;
 
 import net.minecraft.client.renderer.block.model.*;
 import net.minecraft.entity.*;
@@ -18,8 +18,9 @@ public class PlanarItemBase extends Item implements IModeledItem {
 	public PlanarItemBase(String name, boolean addToTab) {
 		super();
 		setUnlocalizedName(name);
-		this.setRegistryName(Planar.prependModID(name));
-		if (addToTab) setCreativeTab(Planar.planar);
+		setRegistryName(Planar.prependModID(name));
+		setMaxStackSize(64);
+		if (addToTab) setCreativeTab(Planar.proxy.PLANAR_TAB);
 		GameRegistry.register(this);
 	}
 
@@ -27,6 +28,10 @@ public class PlanarItemBase extends Item implements IModeledItem {
 		if (entityIn instanceof EntityPlayer) {
 			EntityPlayer player = (EntityPlayer) entityIn;
 		}
+	}
+
+	public PlanarItemBase getItem() {
+		return this;
 	}
 
 	@Override

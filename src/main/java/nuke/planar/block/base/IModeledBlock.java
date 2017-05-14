@@ -1,4 +1,4 @@
-package nuke.planar.block;
+package nuke.planar.block.base;
 
 public interface IModeledBlock {
 	public void initModel();

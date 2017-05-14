@@ -1,7 +1,8 @@
 itemGroup.planar=Planar
 
 //Blocks
-
+tile.block_test.name=Test Block
 
 
 //Items
+item.item_test.name=Test Item

@@ -1,0 +1,5 @@
+{
+    "variants":{
+        "normal":{"model": "planar:block_test"}
+    }
+}

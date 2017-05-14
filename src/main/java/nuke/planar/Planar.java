@@ -1,12 +1,8 @@
 package nuke.planar;
 
-import net.minecraft.creativetab.*;
-import net.minecraft.init.*;
-import net.minecraft.item.*;
 import net.minecraftforge.fml.common.*;
 import net.minecraftforge.fml.common.Mod.*;
 import net.minecraftforge.fml.common.event.*;
-import net.minecraftforge.fml.relauncher.*;
 import nuke.planar.proxy.*;
 
 @Mod(modid = References.MODID, name = References.NAME, version = References.VERSION, clientSideOnly = false, serverSideOnly = false)
@@ -32,19 +28,6 @@ public class Planar {
 	public void postInit( FMLPostInitializationEvent e ) {
 		this.proxy.postInit(e);
 	}
-
-	public static CreativeTabs planar = new CreativeTabs("planar") {
-		@Override
-		public String getTabLabel() {
-			return "planar";
-		}
-
-		@Override
-		@SideOnly(Side.CLIENT)
-		public ItemStack getTabIconItem() {
-			return new ItemStack(Items.APPLE);
-		}
-	};
 
 	public static String prependModID( String name ) {
 		return References.MODID + ":" + name;

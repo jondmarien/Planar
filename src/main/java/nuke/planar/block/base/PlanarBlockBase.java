@@ -1,4 +1,4 @@
-package nuke.planar.block;
+package nuke.planar.block.base;
 
 import net.minecraft.block.*;
 import net.minecraft.block.material.*;
@@ -32,13 +32,13 @@ public class PlanarBlockBase extends Block implements IModeledBlock {
 	        float resistance, SoundType sound, boolean addToTab)
 	{
 		super(mat);
-		this.setUnlocalizedName(name);
-		this.setRegistryName(Planar.prependModID(name));
-		this.setHarvestLevel(toolUsed, toolStrength);
-		this.setHardness(hardness);
-		this.setResistance(resistance);
-		this.setSoundType(sound);
-		if (addToTab) this.setCreativeTab(Planar.planar);
+		setUnlocalizedName(name);
+		setRegistryName(Planar.prependModID(name));
+		setHarvestLevel(toolUsed, toolStrength);
+		setHardness(hardness);
+		setResistance(resistance);
+		setSoundType(sound);
+		if (addToTab) setCreativeTab(Planar.proxy.PLANAR_TAB);
 
 		GameRegistry.register(this);
 		GameRegistry.register(itemBlock = (new ItemBlock(this).setRegistryName(this.getRegistryName())));
@@ -59,13 +59,13 @@ public class PlanarBlockBase extends Block implements IModeledBlock {
 	        float resistance, SoundType sound, boolean addToTab, boolean slippery)
 	{
 		super(mat);
-		this.setUnlocalizedName(name);
-		this.setRegistryName(Planar.prependModID(name));
-		this.setHarvestLevel(toolUsed, toolStrength);
-		this.setHardness(hardness);
-		this.setResistance(resistance);
-		this.setSoundType(sound);
-		if (addToTab) this.setCreativeTab(Planar.planar);
+		setUnlocalizedName(name);
+		setRegistryName(Planar.prependModID(name));
+		setHarvestLevel(toolUsed, toolStrength);
+		setHardness(hardness);
+		setResistance(resistance);
+		setSoundType(sound);
+		if (addToTab) setCreativeTab(Planar.proxy.PLANAR_TAB);
 		if (slippery) this.slipperiness = 0.98F;
 
 		GameRegistry.register(this);
@@ -84,12 +84,12 @@ public class PlanarBlockBase extends Block implements IModeledBlock {
 	        boolean addToTab)
 	{
 		super(mat);
-		this.setUnlocalizedName(name);
-		this.setRegistryName(Planar.prependModID(name));
-		this.setHardness(hardness);
-		this.setResistance(resistance);
-		this.setSoundType(sound);
-		if (addToTab) this.setCreativeTab(Planar.planar);
+		setUnlocalizedName(name);
+		setRegistryName(Planar.prependModID(name));
+		setHardness(hardness);
+		setResistance(resistance);
+		setSoundType(sound);
+		if (addToTab) setCreativeTab(Planar.proxy.PLANAR_TAB);
 
 		GameRegistry.register(this);
 		GameRegistry.register(itemBlock = (new ItemBlock(this).setRegistryName(this.getRegistryName())));
