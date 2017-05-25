@@ -27,4 +27,6 @@ deploy:
   - "./build/libs/Planar-*-*-sources.jar"
   skip_cleanup: true
   on:
-    tags: true    
+    repo: Nuclearsmilz/Planar
+    tags: true
+    all_branches: true  
