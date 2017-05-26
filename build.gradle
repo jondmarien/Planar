@@ -48,6 +48,8 @@ dependencies {
     
     compile 'com.github.Azanor:Baubles:master-SNAPSHOT'
     
+    compile 'com.github.Nuclearsmilz:Darkness:-SNAPSHOT'
+    
     compile files('libs/')
 }
 
