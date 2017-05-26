@@ -1,4 +1,4 @@
-package nuke.planar.block.base;
+package nuke.planar.common.block.base;
 
 import net.minecraft.block.*;
 import net.minecraft.block.material.*;
@@ -12,6 +12,7 @@ import net.minecraftforge.client.model.*;
 import net.minecraftforge.fml.common.registry.*;
 import net.minecraftforge.fml.relauncher.*;
 import nuke.planar.*;
+import nuke.planar.core.*;
 
 public class PlanarBlockBase extends Block implements IModeledBlock {
 	public boolean isOpaqueCube = true, isFullCube = true, isBeaconBase = false;

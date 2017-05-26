@@ -1,4 +1,4 @@
-package nuke.planar.proxy;
+package nuke.planar.core;
 
 import net.minecraftforge.fml.common.event.*;
 

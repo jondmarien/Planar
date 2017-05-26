@@ -1,7 +1,7 @@
-package nuke.planar.block.base;
+package nuke.planar.common.block.base;
 
 import net.minecraft.client.renderer.*;
-import nuke.planar.item.base.*;
+import nuke.planar.common.item.base.*;
 
 /**
  * All following code is borrowed from Pahimar's EE3 source located here:

@@ -1,6 +1,6 @@
-package nuke.planar.item;
+package nuke.planar.common.item;
 
-import nuke.planar.item.base.*;
+import nuke.planar.common.item.base.*;
 
 public class ItemGoggles extends PlanarItemBase {
 

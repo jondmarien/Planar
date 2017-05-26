@@ -1,14 +1,14 @@
-package nuke.planar.proxy;
+package nuke.planar.core;
 
 import net.minecraftforge.fml.common.event.*;
-import nuke.planar.reg.*;
+import nuke.planar.common.*;
 
 public class ClientProxy extends CommonProxy {
 	@Override
 	public void preInit( FMLPreInitializationEvent e ) {
 		super.preInit(e);
 		//KeybindHandler.init();
-		PlanarContent.regRenders();
+		Content.regRenders();
 	}
 
 	@Override

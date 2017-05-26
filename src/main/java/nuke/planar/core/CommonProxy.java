@@ -1,18 +1,15 @@
-package nuke.planar.proxy;
+package nuke.planar.core;
 
 import net.minecraft.creativetab.*;
 import net.minecraftforge.fml.common.event.*;
-import nuke.planar.*;
-import nuke.planar.reg.*;
-import nuke.planar.tab.*;
+import nuke.planar.common.*;
 
 public class CommonProxy {
 
 	public static CreativeTabs PLANAR_TAB;
 
 	public void preInit( FMLPreInitializationEvent e ) {
-		PLANAR_TAB = new CreativeTab(References.MODID);
-		PlanarContent.init();
+		Content.init();
 		//ModRecipes.init();
 	}
 

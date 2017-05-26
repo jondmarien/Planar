@@ -1,15 +1,15 @@
-package nuke.planar.reg;
+package nuke.planar.common;
 
 import java.util.*;
 
 import net.minecraft.block.*;
 import net.minecraft.block.material.*;
 import net.minecraft.item.*;
-import nuke.planar.block.base.*;
-import nuke.planar.item.*;
-import nuke.planar.item.base.*;
+import nuke.planar.common.block.base.*;
+import nuke.planar.common.item.*;
+import nuke.planar.common.item.base.*;
 
-public class PlanarContent {
+public class Content {
 	public static ArrayList<Item> items = new ArrayList<Item>();
 	public static ArrayList<Block> blocks = new ArrayList<Block>();
 	

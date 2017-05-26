@@ -1,4 +1,4 @@
-package nuke.planar.item.base;
+package nuke.planar.common.item.base;
 
 import net.minecraft.client.renderer.block.model.*;
 import net.minecraft.entity.*;
@@ -8,6 +8,7 @@ import net.minecraft.world.*;
 import net.minecraftforge.client.model.*;
 import net.minecraftforge.fml.common.registry.*;
 import nuke.planar.*;
+import nuke.planar.core.*;
 
 public class PlanarItemBase extends Item implements IModeledItem {
 	/**

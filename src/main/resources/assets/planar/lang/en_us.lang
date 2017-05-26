@@ -1,4 +1,4 @@
-itemGroup.planar=Planar
+itemGroup.planar.general=Planar
 
 //Blocks
 tile.block_test.name=Test Block
