@@ -7,7 +7,6 @@ import net.minecraft.item.*;
 import net.minecraft.world.*;
 import net.minecraftforge.client.model.*;
 import net.minecraftforge.fml.common.registry.*;
-import nuke.planar.*;
 import nuke.planar.core.*;
 
 public class PlanarItemBase extends Item implements IModeledItem {
@@ -21,7 +20,7 @@ public class PlanarItemBase extends Item implements IModeledItem {
 		setUnlocalizedName(name);
 		setRegistryName(Planar.prependModID(name));
 		setMaxStackSize(64);
-		if (addToTab) setCreativeTab(Planar.proxy.PLANAR_TAB);
+		if (addToTab) setCreativeTab(Planar.planarTab);
 		GameRegistry.register(this);
 	}
 

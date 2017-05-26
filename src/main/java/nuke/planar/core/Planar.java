@@ -38,7 +38,7 @@ public class Planar {
 		this.proxy.postInit(e);
 	}
 
-	public static CreativeTabs planar = new CreativeTabs("planar.general") {
+	public static CreativeTabs planarTab = new CreativeTabs("planar.general") {
 		@Override
 		public String getTabLabel() {
 			return "planar.general";

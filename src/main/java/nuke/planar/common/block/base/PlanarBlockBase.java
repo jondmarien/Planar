@@ -11,7 +11,6 @@ import net.minecraft.world.*;
 import net.minecraftforge.client.model.*;
 import net.minecraftforge.fml.common.registry.*;
 import net.minecraftforge.fml.relauncher.*;
-import nuke.planar.*;
 import nuke.planar.core.*;
 
 public class PlanarBlockBase extends Block implements IModeledBlock {
@@ -39,7 +38,7 @@ public class PlanarBlockBase extends Block implements IModeledBlock {
 		setHardness(hardness);
 		setResistance(resistance);
 		setSoundType(sound);
-		if (addToTab) setCreativeTab(Planar.proxy.PLANAR_TAB);
+		if (addToTab) setCreativeTab(Planar.planarTab);
 
 		GameRegistry.register(this);
 		GameRegistry.register(itemBlock = (new ItemBlock(this).setRegistryName(this.getRegistryName())));
@@ -66,7 +65,7 @@ public class PlanarBlockBase extends Block implements IModeledBlock {
 		setHardness(hardness);
 		setResistance(resistance);
 		setSoundType(sound);
-		if (addToTab) setCreativeTab(Planar.proxy.PLANAR_TAB);
+		if (addToTab) setCreativeTab(Planar.planarTab);
 		if (slippery) this.slipperiness = 0.98F;
 
 		GameRegistry.register(this);
@@ -90,7 +89,7 @@ public class PlanarBlockBase extends Block implements IModeledBlock {
 		setHardness(hardness);
 		setResistance(resistance);
 		setSoundType(sound);
-		if (addToTab) setCreativeTab(Planar.proxy.PLANAR_TAB);
+		if (addToTab) setCreativeTab(Planar.planarTab);
 
 		GameRegistry.register(this);
 		GameRegistry.register(itemBlock = (new ItemBlock(this).setRegistryName(this.getRegistryName())));
