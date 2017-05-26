@@ -48,7 +48,7 @@ dependencies {
     
     compile 'com.github.Azanor:Baubles:master-SNAPSHOT'
     
-    compile 'com.github.Nuclearsmilz:Darkness:-SNAPSHOT'
+    compile 'com.github.Nuclearsmilz:Darkness:master-SNAPSHOT'
     
     compile files('libs/')
 }
