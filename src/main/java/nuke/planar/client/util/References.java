@@ -16,8 +16,8 @@ public class References {
 	public static final String VERSION = MCVERSION + "-" + MAJOR + "." + MINOR + "." + PATCH + "";
 	public static final String DEPENDENCIES = "";
 
-	public static final String CLIENT_PROXY_CLASS = "nuke.planar.proxy.ClientProxy";
-	public static final String SERVER_PROXY_CLASS = "nuke.planar.proxy.ServerProxy";
+	public static final String CLIENT_PROXY_CLASS = "nuke.planar.core.ClientProxy";
+	public static final String SERVER_PROXY_CLASS = "nuke.planar.core.ServerProxy";
 
 	public static final Random RANDOM = new Random();
 	public static final Logger LOGGER = LogManager.getLogger(NAME);
