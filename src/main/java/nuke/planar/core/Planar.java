@@ -24,18 +24,18 @@ public class Planar {
 		MinecraftForge.EVENT_BUS.register(new Config());
 		Config.initConfig(e.getSuggestedConfigurationFile());
 		References.LOGGER.info("Config is loaded!");
-		this.proxy.preInit(e);
+		Planar.proxy.preInit(e);
 	}
 
 	@EventHandler
 	public void init( FMLInitializationEvent e ) {
-		this.proxy.init(e);
+		Planar.proxy.init(e);
 	}
 
 	@EventHandler
 	public void postInit( FMLPostInitializationEvent e ) {
 		References.LOGGER.info("Planar has loaded!");
-		this.proxy.postInit(e);
+		Planar.proxy.postInit(e);
 	}
 
 	public static CreativeTabs planarTab = new CreativeTabs("planar.general") {
